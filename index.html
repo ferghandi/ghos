@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:linear-gradient(135deg,#1E88E5,#42A5F5);
+    color:#fff;
+}
+.container{
+    text-align:center;
+}
+.logo{
+    width:120px;
+    height:120px;
+    border-radius:30px;
+    margin-bottom:20px;
+}
+h1{
+    font-size:36px;
+    margin-bottom:10px;
+}
+p{
+    font-size:18px;
+    opacity:.9;
+    margin-bottom:30px;
+}
+button{
+    padding:14px 40px;
+    border:none;
+    border-radius:30px;
+    background:#fff;
+    color:#1E88E5;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+button:hover{
+    transform:scale(1.05);
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <img src="logo.png" class="logo" alt="Logo">
+    <h1>Welcome</h1>
+    <p>Enjoy Live Cricket Scores & Streaming</p>
+    <button onclick="location.href='home.html'">Get Started</button>
+</div>
+
+</body>
+</html>
