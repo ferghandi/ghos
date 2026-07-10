@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — CricOne</title>
+<meta name="description" content="Privacy Policy for the CricOne Android app by Mysticcraftz.">
+<link rel="canonical" href="https://cricone.app/privacy">
+<style>
+  :root{
+    --bg:#0E1116; --card:#171B21; --card2:#1E242C; --line:rgba(255,255,255,.08);
+    --ink:#EEF2F6; --sub:#98A3AE; --sub2:#5F6B76; --green:#26D07C; --amber:#F2D06B;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;-webkit-text-size-adjust:100%}
+  .wrap{max-width:760px;margin:0 auto;padding:28px 20px 80px}
+
+  header{padding:26px 0 18px;border-bottom:1px solid var(--line);margin-bottom:26px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .logo{width:42px;height:42px;border-radius:12px;background:linear-gradient(160deg,#26D07C,#0C9257);
+    display:flex;align-items:center;justify-content:center;font-weight:800;color:#052c17;font-size:20px}
+  h1{font-size:26px;margin:14px 0 6px;letter-spacing:-.3px}
+  .meta{color:var(--sub2);font-size:12.5px}
+  .app{color:var(--sub);font-size:13px;font-weight:600}
+
+  h2{font-size:17px;margin:34px 0 10px;letter-spacing:-.2px}
+  h3{font-size:14px;margin:20px 0 6px;color:var(--ink)}
+  p,li{color:var(--sub);font-size:14.5px}
+  strong{color:var(--ink)}
+  a{color:var(--green);text-decoration:none;border-bottom:1px solid rgba(38,208,124,.35)}
+  a:hover{border-bottom-color:var(--green)}
+  ul{padding-left:20px}
+  li{margin:5px 0}
+
+  .card{background:linear-gradient(160deg,var(--card),var(--card2));border:1px solid var(--line);
+    border-radius:14px;padding:16px 18px;margin:16px 0}
+  .card p:last-child{margin-bottom:0}
+  .card p:first-child{margin-top:0}
+
+
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--sub2);font-size:11px;text-transform:uppercase;letter-spacing:.5px;font-weight:800}
+  td{color:var(--sub)}
+  td strong{color:var(--ink);font-weight:600}
+
+  footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
+    color:var(--sub2);font-size:12.5px}
+  @media (max-width:520px){
+    h1{font-size:22px} .wrap{padding:20px 16px 60px}
+    table,thead,tbody,th,td,tr{display:block}
+    th{display:none}
+    td{border:none;padding:4px 0}
+    tr{border-bottom:1px solid var(--line);padding:10px 0}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <div class="logo">C</div>
+      <div>
+        <div class="app">CricOne</div>
+        <div class="meta">com.aicriclive.mysticcraftz</div>
+      </div>
+    </div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">Last updated: 10 July 2026</div>
+  </header>
+
+  <p>
+    This policy explains what the <strong>CricOne</strong> Android app collects, why, and who it is
+    shared with. CricOne is published by <strong>Mysticcraftz</strong> ("we", "us").
+  </p>
+
+  <div class="card">
+    <p><strong>The short version.</strong> CricOne has no accounts and no login. We do not ask for
+    your name, email, phone number or location. We do not sell personal data. The app uses a random
+    identifier to count live viewers, and shows ads that may use your device's advertising ID.</p>
+  </div>
+
+  <h2>1. Information we collect</h2>
+
+  <h3>Information you give us</h3>
+  <p><strong>None.</strong> CricOne has no sign-up, no login and no profile. We never ask for your
+  name, email address, phone number, photos, contacts or precise location.</p>
+
+  <h3>Information collected automatically</h3>
+
+  <table>
+    <thead>
+      <tr><th>Data</th><th>Why</th><th>Where it goes</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Random device identifier</strong><br>A UUID generated on your device the first
+        time you open a stream.</td>
+        <td>To show how many people are watching a stream right now. It is removed as soon as you
+        close the stream.</td>
+        <td>Firebase Realtime Database</td>
+      </tr>
+      <tr>
+        <td><strong>Poll and quiz answers</strong><br>Which team you picked, which quiz option you
+        chose.</td>
+        <td>To show the aggregate percentages other users see. Stored as anonymous counters — your
+        answer is not tied to you.</td>
+        <td>Cloud Firestore</td>
+      </tr>
+      <tr>
+        <td><strong>Push notification token</strong></td>
+        <td>To send match alerts, if you allow notifications.</td>
+        <td>Firebase Cloud Messaging</td>
+      </tr>
+      <tr>
+        <td><strong>App integrity token</strong><br>A short-lived token from Google Play Integrity.</td>
+        <td>To confirm requests come from the genuine app, so our data provider isn't abused. Contains
+        no personal information.</td>
+        <td>Firebase App Check / Google</td>
+      </tr>
+      <tr>
+        <td><strong>Advertising ID and ad interaction data</strong></td>
+        <td>To show ads and measure them. Handled by our advertising partner and its mediated
+        networks, not by us.</td>
+        <td>CAS.AI and its ad networks</td>
+      </tr>
+      <tr>
+        <td><strong>Crash and performance data</strong></td>
+        <td>Standard diagnostics collected by Google Play services and our SDKs to keep the app
+        stable.</td>
+        <td>Google</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Stored only on your phone</h3>
+  <p>Your theme choice, followed matches, and a record of which polls and quizzes you have already
+  answered are kept in local storage on your device. Uninstalling the app deletes them.</p>
+
+  <h2>2. Permissions the app requests</h2>
+  <ul>
+    <li><strong>Internet</strong> and <strong>network state</strong> — to load scores and streams,
+    and to tell you when you're offline.</li>
+    <li><strong>Notifications</strong> (Android 13+) — optional. Only used for match alerts. You can
+    decline, and the app works normally.</li>
+  </ul>
+  <p>CricOne does not request location, camera, microphone, contacts or storage permissions.</p>
+
+  <h2>3. Advertising</h2>
+  <p>
+    CricOne is free and supported by advertising through <strong>CAS.AI</strong>, which mediates
+    several ad networks (including Google AdMob, AppLovin, Unity Ads and others). These partners may
+    access your device's advertising identifier and non-precise information about your device to
+    select and measure ads.
+  </p>
+  <p>
+    We show a consent dialog where required (for example under GDPR). You can reset or delete your
+    advertising ID at any time in <em>Android Settings → Privacy → Ads</em>.
+  </p>
+  <p>
+    Read CAS.AI's policy: <a href="https://cas.ai/privacy-policy/" rel="nofollow noopener">cas.ai/privacy-policy</a>.
+    Google's policy: <a href="https://policies.google.com/privacy" rel="nofollow noopener">policies.google.com/privacy</a>.
+  </p>
+
+  <h2>4. Third-party services</h2>
+  <ul>
+    <li><strong>Google Firebase</strong> — Cloud Messaging, Firestore, Realtime Database, App Check.
+      (<a href="https://firebase.google.com/support/privacy" rel="nofollow noopener">policy</a>)</li>
+    <li><strong>Google Play services</strong> — including Play Integrity.
+      (<a href="https://policies.google.com/privacy" rel="nofollow noopener">policy</a>)</li>
+    <li><strong>CAS.AI</strong> and its mediated ad networks — advertising.</li>
+    <li><strong>Sportmonks</strong> — cricket scores and statistics. Requests reach Sportmonks
+      through our own server, which does not forward any information about you.</li>
+    <li><strong>Cloudflare</strong> — serves our API proxy. Like any web server, it processes IP
+      addresses to route and cache requests.</li>
+  </ul>
+
+  <h2>5. Live video content</h2>
+  <p>
+    Some matches include links to video streams hosted by third parties. Those streams are not
+    operated by us. When you open one, the hosting provider may receive your IP address and standard
+    request information, governed by that provider's own policy — not this one.
+  </p>
+
+  <h2>6. Children</h2>
+  <p>
+    CricOne is not directed at children under 13, and we do not knowingly collect personal
+    information from them. If you believe a child has provided us with information, contact us and we
+    will delete it.
+  </p>
+
+  <h2>7. Data retention and deletion</h2>
+  <ul>
+    <li><strong>Viewer presence</strong> is deleted the moment you leave a stream, close the app, or
+    lose connection.</li>
+    <li><strong>Poll and quiz counters</strong> are aggregate totals and are not linked to any
+    person, so they cannot be traced back to you or removed individually.</li>
+    <li><strong>Local data</strong> is removed when you uninstall the app or clear its storage.</li>
+    <li><strong>Notification tokens</strong> stop being used once you uninstall or disable
+    notifications.</li>
+  </ul>
+  <p>
+    To ask a question about your data, or to request deletion of anything you believe identifies you,
+    email us at the address below.
+  </p>
+
+  <h2>8. Your rights</h2>
+  <p>
+    Depending on where you live (for example under the GDPR or CCPA), you may have the right to
+    access, correct, delete, or object to the processing of your personal information, and to
+    withdraw consent for personalised ads. Because CricOne holds no account and no directly
+    identifying data, most requests concern the advertising identifier, which you control through
+    your device settings. You may also contact us and we will help where we can.
+  </p>
+
+  <h2>9. Security</h2>
+  <p>
+    Traffic between the app and our servers is encrypted (HTTPS). Our API credentials are kept on the
+    server and never shipped inside the app, and requests are verified with Google Play Integrity so
+    that only the genuine app can use them. No system is perfectly secure, but we take reasonable
+    measures to protect the little data we hold.
+  </p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>
+    We may update this policy as the app changes. The date at the top always reflects the current
+    version. Material changes will be announced in the app or on the store listing.
+  </p>
+
+  <h2>11. Contact</h2>
+  <div class="card">
+    <p><strong>Mysticcraftz</strong><br>
+    Email: <a href="mailto:support@cricone.app">support@cricone.app</a><br>
+    Website: <a href="https://cricone.app">cricone.app</a><br>
+    App: CricOne (<span class="meta">com.aicriclive.mysticcraftz</span>)</p>
+  </div>
+
+
+  <footer>
+    © 2026 Mysticcraftz. CricOne is not affiliated with, endorsed by, or connected to the ICC, BCCI,
+    PCB, ECB, or any cricket board, league or broadcaster.
+  </footer>
+
+</div>
+</body>
+</html>
